@@ -1,0 +1,15 @@
+#=================================
+# lsuser - list users
+#=================================
+# Assignments
+# --------------------------------
+datafile="/etc/passwd"
+# end assignments
+
+#=================================
+#
+# Data input
+#---------------------------------
+while read line
+do echo $line | cut -d: -f1
+done < $datafile
